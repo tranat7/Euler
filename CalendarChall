@@ -1,0 +1,11 @@
+import calendar
+def dayfinder(year, month, day):
+	daysoftheweek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+	]
+	date = calendar.weekday(year, month, day)
+	print daysoftheweek[date]
+
+year = input("What Year?")
+month = input("What Month?")
+day = input("What day?")
+dayfinder(year, month , day)
